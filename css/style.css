@@ -1,0 +1,185 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #0A143A;
+}
+.container{
+    max-width: 1146px;
+    margin: auto;
+}
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 12px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*распределяет пространство*/
+    margin-bottom: 24px;
+}
+.navbar-menu{
+    margin-right: auto;
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding-left: 22px;
+    padding-right: 22px;
+    display: flex;
+}
+.menu-item:not(:last-child){ /*для всех кроме последнего*/
+    margin-right: 14px;
+}
+.menu-link{
+    text-decoration: none; /*tdn*/
+    color: inherit; /* цвет как у родителя */
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px; /* сверху и снизу 10px по бокам 15 */
+    cursor: pointer; /* мышка превращается в указатель */
+}
+.button-link{
+    color: inherit;
+}
+.button-primery{
+    background-color: #256eeb;
+    border-radius: 5px;
+    color: white;
+}
+.search-panel{
+    height: 50px;
+    background: #256EEB;
+    border-radius: 5px;
+    display: flex;
+    padding: 3px;
+}
+.search-input{
+    flex-grow: 1; /* растягивается на все свободное место */
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    padding-left: 22px;
+    padding-right: 22px;
+    outline: none;
+}
+.search-button{
+    background:#256EEB;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 17px;
+    display: flex;
+    align-items: center;
+}
+.search-button-text{
+    margin-left: 5px;
+}
+
+
+.page-content{
+    display: grid;/* гибкое разбиение лучше чем flex */
+    grid-template-columns:  9fr 3fr;/* деление на два столбика с разным весом в 9 фракций и 3 фракции */
+    grid-column-gap: 30px;/* расстояние между столбиками */
+}
+.img-card{
+    border-radius: 10px;
+    height: 178px;
+    width: 264px;
+    object-fit: cover;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap; /*переносит если не влазит*/
+}
+.card{
+    margin-bottom: 20px;
+}
+.card:not(:nth-child(3n)){ /*для всех кроме каждого третьего*/
+    margin-right: 20px;
+}
+.card-title{
+    font-size: 16px;
+line-height: 19px;
+color: #256EEB;
+margin-top: 12px;
+margin-bottom: 5px;
+width: 220px;
+white-space: nowrap;
+    overflow-x: hidden; /*текст отображается на допустимой ширине, остальной не видно*/
+    text-overflow: ellipsis;
+}
+.card-header{
+    max-width: 264px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.button-like{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.card-price{
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+    display: block;
+}
+.card-text{
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C4C4;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+.card-link{
+    text-decoration: none;
+}
+.servise{
+    margin-bottom: 25px;
+}
+.servise-title{
+    font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color: #0A143A;
+margin-top: 7px;
+margin-bottom: 5px;
+}
+.sidebar .paget-title{
+    font-size: 18px;
+    line-height: 21px;
+}
+.servise-image{
+    padding-top: 5px;
+}
+.servise-text{
+    font-size: 14px;
+line-height: 16px;
+
+color: #0A143A;
+}
+.footer-text{
+    display: inline-block;
+    font-size: 14px;
+line-height: 16px; 
+color: #C4C4C4; 
+margin-bottom: 5px;
+}
+.footer-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 16px;
+}
+.footer-link{
+    display: inline-block;
+    color: #0A143A;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
