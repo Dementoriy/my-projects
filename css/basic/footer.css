@@ -1,0 +1,42 @@
+.footer{
+    position: relative;
+}
+.footer_wrap{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17.2rem 12rem 8.4rem 12rem;
+}
+.footer_inst-img{
+    width: 3.3rem;
+    height: 3.3rem;
+}
+.footer_header{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 114%;
+}
+
+.footer_decor-1{
+    position: absolute;
+    left: 8%;
+    top: 20%;
+    transition: transition(-50%, 50%);
+    width: 11rem;
+    height: 12.5rem;
+}
+.footer_decor-2{
+    position: absolute;
+    left: 77%;
+    top: 10%;
+    transition: transition(-50%, 50%);
+    width: 23.3rem;
+    height: 26.4rem;
+}
+
+.footer_wrap li{
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 114%;
+}

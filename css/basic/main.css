@@ -1,0 +1,72 @@
+.main-display{
+    padding-top: 4.7rem;
+}
+.main-display_top{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.main-display_logo{
+    display: flex;
+    align-items: center;
+}
+.main-display_logo-img{
+    width: 10rem;
+    height: 6rem;
+    margin-right: 1.1rem;
+}
+.main-display_title{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3.6rem;
+    line-height: 117%;
+}
+.main-display_nav{
+    display: flex;
+}
+.main-display_nav li{
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 117%;
+
+}
+.main-display_nav li:not(:last-child){
+    margin-right: 2.5rem;
+}
+.main-display_header{
+    margin-bottom: 2rem;
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 118%;
+    margin: 0;
+}
+.main-display_subheader{
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 117%;
+}
+.main-display_button{
+    color:white;
+    outline: none;
+    background: linear-gradient(95.2deg, #B90160 2.23%, #2E3192 99.51%);
+    border-radius: 7px;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+}
+.main-display_center{
+    display: flex;
+    justify-content: space-between;
+}
+.main-display_right{
+    width: 53.3rem;
+    height: 68.6rem;
+}
+.main-display_left{
+    padding-top:19rem; 
+}

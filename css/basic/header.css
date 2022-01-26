@@ -1,0 +1,46 @@
+.header{
+    background: linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
+    color: white;
+    padding-top: 2.3rem;
+    padding-bottom: 2.6rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 63%;
+}
+
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_telefone-img{
+    width: 2rem;
+    height: 2rem;
+}
+.header_maps-img{
+    width: 1.5rem;
+    height: 1.5rem; 
+}
+.header_inst-img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.header_inst-img, 
+.header_maps-img, 
+.header_telefone-img{
+    margin-right: 1.5rem;
+}
+
+.header_inst,
+.header_maps,
+.header_telephone{
+    display: flex;
+    align-items: center;
+
+}
+
+.header_inst span{
+    line-height: 100%;
+}
