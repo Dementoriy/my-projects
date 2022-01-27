@@ -40,3 +40,12 @@
     font-size: 1.4rem;
     line-height: 114%;
 }
+.footer_address ul{
+    max-width: 22.4rem;
+}
+.footer_telephone li{
+    margin-bottom: 0.8rem;
+}
+.footer_address li{
+    margin-bottom: 0.8rem;
+}
