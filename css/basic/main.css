@@ -68,5 +68,12 @@
     height: 68.6rem;
 }
 .main-display_left{
-    padding-top:19rem; 
+    padding-top:19rem;
+}
+.main_decor-1{
+    position: absolute;
+    left: 48%;
+    top: 36%;
+    width: 74.5rem;
+    height: 52.2rem;
 }

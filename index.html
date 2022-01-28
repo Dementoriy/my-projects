@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/basic/review.css">
     <link rel="stylesheet" href="css/basic/footer.css">
     <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Evarugs for you</title>
 </head>
 <body>
@@ -72,6 +73,9 @@
                         </div>
                         <div class="main-display_right">
                             <img src="./img/capter.png" alt="capter">
+                        </div>
+                        <div class="main_decor-1">
+                            <img src="./img/bcg1r.png" alt="main_decor-1">
                         </div>
                     </div>
                 </div>
@@ -242,6 +246,34 @@
             </div>
         </div>
     </footer>
+
+    <form action="#" class="modal">
+        <div class="modal_inner">
+            <div class="modal_inner-header">Форма заявки</div>
+            <div class="modal_inner-elements">
+                <div class="modal_iteam">
+                    <div class="modal_input modal_wrap-input">
+                        <input type="text">
+                    </div>
+                    <div class="modal_input modal_wrap-input">
+                        <input type="email">
+                    </div>
+                </div>
+                <div class="modal_iteam modal_iteam-long"> 
+                    <textarea name="text" class="modal_message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="modal_policy">
+                    <input type="checkbox" id="modal_check">
+                    <label for="modal_check">
+                        <span>Я соглашаюсь с</span>
+                        <a href="#">Политика безопасности</a>
+                    </label>
+                </div>
+                <button type="button" class="main-display_button modal_button">Заказать</button>
+            </div>
+        </div>
+    </form>
+
     <script src="js/swiper-bundle.js"></script>
     <script src="js/main.js"></script>
 </body>
