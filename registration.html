@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css" data-th-href="@{/css/normalize.css}">
+    <link rel="stylesheet" href="./css/header.css" data-th-href="@{/css/header.css}">
+    <link rel="stylesheet" href="./css/style.css" data-th-href="@{/css/style.css}">
+    <link rel="stylesheet" href="./css/registration.css" data-th-href="@{/css/registration.css}">
+    <title>ITb-grad-registration</title>
+
+</head>
+<body class="page">
+    <header>
+        <div class="container">
+            <nav class="header_nav">
+                <button class="header_logo-btn" onclick="window.location.href='index.html'">
+                    <img src="./img/logo.jpg" alt="logo" class="header_logo-img">
+                </button>
+                <a href="index.html">Главная</a>
+                <h1 class="registration_header">Регистрация</h1>
+                <div class="obman">1</div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="registration_wrap">
+                <div class="registration_elements">
+                    <div class="registration_item">
+                        <div class="registration_input">
+                            <input type="text" placeholder="Login">
+                        </div>
+                        <div class="registration_input">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="registration_input">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="registration_input">
+                            <input type="password" placeholder="Repeat password">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="registration_button">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,132 @@
+.page{
+    background-color: #343a40;
+    width:100%;
+    height:100%;
+}
+header{
+    background: #212529;
+    padding: 2rem 0;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.obman{
+    padding: 0 23rem;
+    color:#212529;
+}
+.header_nav a:hover
+{
+    text-decoration: none;
+    color: #ffc107;
+    
+}
+.header_nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color:white;
+    width: 100%;
+    text-align: left;
+}
+.registration_wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+.registration_item{
+    text-align: center;
+}
+.registration_header{
+
+    font-size: 2rem;
+    color: #ffc107;
+    width: 100%;
+    text-align: center;
+}
+.registration_elements{
+    margin-top: 3rem;
+}
+.registration_input input{
+    width: 19rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    border-radius: 0.5rem;
+    outline: none;
+    border-color: black;
+    background-color: darkgray;
+}
+.registration_item div{
+    margin-bottom: 1.2rem;
+}
+
+.registration_button{
+    color:#212529;
+    outline: none;
+    background: #ffc107;
+    border-radius: 5px;
+    border: 1px solid #212529;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+.registration_button_button:hover{
+    color: white;
+}
+.registration_button_button:focus{
+    border: 1px solid #68510c;
+}
+
+.enter_button{
+    color:#212529;
+    outline: none;
+    background: #ffc107;
+    border-radius: 5px;
+    border: 1px solid #212529;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 20%;
+}
+.enter_button:hover{
+    color: white;
+}
+.enter_button:focus{
+    border: 1px solid #68510c;
+}
+
+@media (max-width: 1250px)
+{
+    .obman{
+        padding: 0 20rem;
+        color:#212529;
+    }
+}
+@media (max-width: 1141px)
+{
+    .obman{
+        padding: 0 18rem;
+        color:#212529;
+    }
+}
+@media (max-width: 1041px)
+{
+    .obman{
+        padding: 0 16rem;
+        color:#212529;
+    }
+}
+@media (max-width: 930px)
+{
+    .obman{
+        padding: 0 1rem;
+        color:#212529;
+    }
+}

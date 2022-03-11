@@ -1,0 +1,239 @@
+header{
+    background: #212529;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 63%;
+}
+
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar_panel
+{
+    flex-grow: 1; /*растянуть по ширине*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 14px;
+}
+
+.header_logo-btn{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    border-radius: 40%;
+    border: none;
+    background-color:#212529;
+}
+.header_logo-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.header_nav a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+.header_nav a:hover
+{
+    text-decoration: none;
+    color: #ffc107;
+    
+}
+.header_nav a:not(:last-child)
+{
+    margin-right: 2.5rem;
+}
+.registration{
+    display: flex;
+}
+.sign_in_button{
+    color:#fff;
+    outline: none;
+    background: #212529;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.sign_in_button:hover{
+    color:#212529;
+    background: #fff;
+}
+.sign_in_button2{
+    color:#fff;
+    outline: none;
+    background: #212529;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: none;
+}
+.sign_in_button2:hover{
+    color:#212529;
+    background: #fff;
+}
+.sign_on_button{
+    color:#212529;
+    outline: none;
+    background: #ffc107;
+    border-radius: 5px;
+    border: 1px solid #212529;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+.sign_on_button:hover{
+    color: white;
+}
+.sign_on_button:focus{
+    border: 1px solid #68510c;
+}
+.search{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #212529;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-right: 1rem;
+}
+.search2{
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: #212529;
+    color: white;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-right: 1rem;
+    display: none;
+}
+.menu-btn{
+    background-color:#212529;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+@media (max-width: 1200px)
+{
+    .sign_in_button2{
+        display: block;
+    }
+    .sign_in_button{
+        display: none;
+    }
+}
+@media (max-width: 1040px)
+{
+    .input{
+        width: 13rem;
+}
+}
+@media (max-width: 950px)
+{
+.header_nav a:not(:last-child)
+{
+    margin-right: 1.5rem;
+}
+}
+
+@media (max-width: 930px)
+{
+    .menu-btn{
+        display: block;
+    }
+    .navbar_panel{
+        position: fixed;
+        background-color:#212529;
+        right: 0;
+        top: 0;
+        width: 60%;
+        height: 100%;
+        z-index: 9;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.2s, opacity 0.2s;
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    .is-open{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .close-menu{
+        display: block;
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        cursor: pointer;
+        background-color:#212529;
+        border: none;
+    }
+    .header_nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .header_nav a:not(:last-child)
+    {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .registration{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20rem;
+    }
+    .registration_item{
+        margin-bottom: 2rem;
+    }
+    .search{
+        display: none;
+    }
+    .search2{
+        display: block;
+    }
+}
+@media (max-width: 600px){
+    .navbar_panel{
+        width: 100%;
+    }
+}

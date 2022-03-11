@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css" data-th-href="@{/css/normalize.css}">
+    <link rel="stylesheet" href="./css/header.css" data-th-href="@{/css/header.css}">
+    <link rel="stylesheet" href="./css/style.css" data-th-href="@{/css/style.css}">
+    <link rel="stylesheet" href="./css/registration.css" data-th-href="@{/css/registration.css}">
+    <link rel="stylesheet" href="./css/modalQuote.css" data-th-href="@{/css/modalQuote.css}">
+    <title>ITb-grad-add-quote</title>
+</head>
+<body class="page">
+    <header>
+        <nav class="header_nav">
+            <button class="header_logo-btn" onclick="window.location.href='index.html'">
+                <img src="./img/logo.jpg" alt="logo" class="header_logo-img">
+            </button>
+            <a href="index.html">Главная</a>
+            <h1 class="registration_header">Добавить</h1>
+            <div class="obman">1</div>
+        </nav>
+    </header>
+    <main>
+        <div class="modal_add">
+            <div class="modal_add_header">
+                <input type="text" placeholder="Название">
+            </div>
+            <div class="modal_add_text">
+                <textarea name="quote" cols="22" rows="2" class="quote-text" placeholder="Цитата"></textarea>
+            </div>
+            <div class="modal_add_line"></div>
+            <div class="modal_add_teg">
+                <input type="text" placeholder="Теги">
+            </div>
+            <div class="card_author modal_add_author_block">
+                <h4 class="card_author-c">©</h4>
+                <div class="modal_add_author">
+                    <input type="text" placeholder="Автор">
+                </div>
+            </div>
+            <button type="button" class="modal_add_btn">Добавить</button>
+        </div>
+    </main>
+</body>
+</html>

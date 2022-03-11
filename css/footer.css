@@ -1,0 +1,63 @@
+footer{
+    position: relative;
+    background: #212529;
+    color: white;
+}
+.footer_wrap{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 12rem 8rem 12rem;
+}
+.footer_header{
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 114%;
+}
+.footer_wrap li{
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 114%;
+}
+.footer_address ul{
+    max-width: 22.4rem;
+}
+.footer_telephone li{
+    margin-bottom: 0.8rem;
+}
+.footer_address li{
+    margin-bottom: 0.8rem;
+}
+
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 26px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+.instagram a:hover {background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: #fff;}
+.discord a:hover {background: #7289d9; color: #fff;}
+.discord a{
+    margin-right: 2rem;
+}
+.social a i {
+    font-size: 5em !important;
+    margin-top: 0.2rem;
+}
+
+@media (max-width: 730px)
+{
+    .footer_wrap{ 
+        padding: 8rem 0rem 8rem 0rem;
+    }
+}

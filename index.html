@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/788f2fe923.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css" data-th-href="@{/css/normalize.css}">
+    <link rel="stylesheet" href="./css/style.css" data-th-href="@{/css/style.css}">
+    <link rel="stylesheet" href="./css/header.css" data-th-href="@{/css/header.css}">
+    <link rel="stylesheet" href="./css/main.css" data-th-href="@{/css/main.css}">
+    <link rel="stylesheet" href="./css/footer.css" data-th-href="@{/css/footer.css}">
+    <link rel="stylesheet" href="./css/modal.css" data-th-href="@{/css/modal.css}">
+    <title>QuoteSite</title>
+</head>
+<body>
+    <header>
+
+        <div class="container">
+            <div class="header_wrap">
+                <button class="header_logo-btn" onclick="window.location.href='/src/main/resources/templates/index.html'">
+                    <img src="./img/logo.jpg" alt="logo" class="header_logo-img">
+                </button>
+                <label>
+                    <input type="text" class="search2 registration_item" placeholder="Поиск:">
+                </label>
+                <div class="navbar_panel">
+                    <button class="close-menu">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L21 21M21 1L1 21" stroke="#FF0000"/>
+                        </svg>
+                    </button>
+                                                                    
+                    <nav class="header_nav">
+                        <a href="index.html">Главная</a>
+                        <a href="quote.html">Добавить</a>
+                        <a href="#">Anything</a>
+                    </nav>
+                    <div class="registration">
+                        <label>
+                            <input type="text" class="search registration_item" placeholder="Поиск:">
+                        </label>
+                        <button type="button" class="sign_in_button registration_item">Войти</button>
+                        <button type="button" class="sign_in_button2 registration_item" onclick="window.location.href = 'enter.html'">Войти</button>
+                        <button type="button" class="sign_on_button" onclick="window.location.href = 'registration.html'">Зарегистрироваться</button>
+                    </div>
+                </div>
+                <button class="menu-btn">
+                    <svg width="50" height="32" viewBox="0 0 50 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2_6)">
+                        <rect width="50" height="32" fill="#212529"/>
+                        <rect y="1" width="50" height="6" rx="3" fill="white"/>
+                        <rect y="13" width="50" height="6" rx="3" fill="white"/>
+                        <rect y="25" width="50" height="6" rx="3" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2_6">
+                        <rect width="50" height="32" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                                                                                                                                                                  
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main_wrap">
+                <div class="card" data-th-each="quote : ${quoteList}">
+                    <h2 class="card_title card_element" data-th-text="${quote.title}">Цитатка</h2>
+                    <h3 class="card-text card_element" data-th-text="${quote.text}">Цитата великого человека</h3>
+                    <div class="card_element card_line"></div>
+                    <div data-th-each="tag : ${quote.tags}">
+                        <h4 class="card-teg card_element" data-th-text="@{'#'+${tag.title}+' '}">#цитата #топ100</h4>
+                    </div>
+                    <div class="card_author card_element">
+                        <h4 class="card_author-c">©</h4>
+                        <div data-th-each="author : ${quote.authors}">
+                            <h4 class="card_author_name" data-th-text="@{' '+${author.name}}">Человек</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-th-each="quote : ${quoteList}">
+                    <h2 class="card_title card_element" data-th-text="${quote.title}">Цитатка</h2>
+                    <h3 class="card-text card_element" data-th-text="${quote.text}">Цитата великого человека</h3>
+                    <div class="card_element card_line"></div>
+                    <div data-th-each="tag : ${quote.tags}">
+                        <h4 class="card-teg card_element" data-th-text="@{'#'+${tag.title}+' '}">#цитата #топ100</h4>
+                    </div>
+                    <div class="card_author card_element">
+                        <h4 class="card_author-c">©</h4>
+                        <div data-th-each="author : ${quote.authors}">
+                            <h4 class="card_author_name" data-th-text="@{' '+${author.name}}">Человек</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-th-each="quote : ${quoteList}">
+                    <h2 class="card_title card_element" data-th-text="${quote.title}">Цитатка</h2>
+                    <h3 class="card-text card_element" data-th-text="${quote.text}">Цитата великого человека</h3>
+                    <div class="card_element card_line"></div>
+                    <div data-th-each="tag : ${quote.tags}">
+                        <h4 class="card-teg card_element" data-th-text="@{'#'+${tag.title}+' '}">#цитата #топ100</h4>
+                    </div>
+                    <div class="card_author card_element">
+                        <h4 class="card_author-c">©</h4>
+                        <div data-th-each="author : ${quote.authors}">
+                            <h4 class="card_author_name" data-th-text="@{' '+${author.name}}">Человек</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-th-each="quote : ${quoteList}">
+                    <h2 class="card_title card_element" data-th-text="${quote.title}">Цитатка</h2>
+                    <h3 class="card-text card_element" data-th-text="${quote.text}">Цитата великого человека</h3>
+                    <div class="card_element card_line"></div>
+                    <div data-th-each="tag : ${quote.tags}">
+                        <h4 class="card-teg card_element" data-th-text="@{'#'+${tag.title}+' '}">#цитата #топ100</h4>
+                    </div>
+                    <div class="card_author card_element">
+                        <h4 class="card_author-c">©</h4>
+                        <div data-th-each="author : ${quote.authors}">
+                            <h4 class="card_author_name" data-th-text="@{' '+${author.name}}">Человек</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="footer_soc">
+                    <h3 class="footer_header">МЫ В СОЦИАЛЬНЫХ СЕТЯХ</h3>
+                    <div class="social instagram">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="social discord">
+                        <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer_telephone">
+                    <h3 class="footer_header">Контакты</h3>
+                    <ul class="footer_soc-ul">
+                        <li>unknown_ike@vk.com (Егор)</li>
+                        <li>dementoriy@vk.com (Дмитрий)</li>
+                    </ul>
+                </div>
+                <div class="footer_address">
+                    <h3 class="footer_header">О НАС</h3>
+                    <ul>
+                        <li>Цитаты ИТб града</li>
+                        <li>Киров</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <form action="#" class="modal_in">
+        <div class="modal_inner">
+            <div class="modal_tittle">
+                <div class="modal_inner-header">Вход</div>
+            </div>
+            <div class="modal_inner-elements">
+                <div class="modal_iteam">
+                    <div class="modal_input">
+                        <label>
+                            <input type="email" placeholder="Email">
+                        </label>
+                    </div>
+                    <div class="modal_input">
+                        <label>
+                            <input type="password" placeholder="Password">
+                        </label>
+                    </div>
+                </div>
+                <div class="modal_button">
+                    <button type="button" class="modal_in_button">Войти</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="./js/js.js" data-th-src="@{/js/js.js}"></script>
+</body>
+</html>

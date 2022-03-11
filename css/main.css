@@ -1,0 +1,102 @@
+main{
+    background-color: #343a40;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(3, 29%);
+    gap: 0 6.1rem;
+}
+
+.card{
+    position: relative;
+    display:block;
+    border: 1 px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    cursor: default;
+}
+.card_element{
+    margin-bottom: 1rem;
+} 
+.card_title{
+    color: black;
+    text-align: center;
+}
+.card_author{
+    display:flex;
+    align-items: right;
+    justify-content:right;
+}
+.card-teg{
+    color: gray;
+    font-weight: 300;
+}
+.card-text{
+    margin-bottom: 3rem;
+}
+.card_line{
+    height: 2px;
+    background: #ffc107;
+}
+
+@media (max-width: 950px){
+    .main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(3, 29%);
+    gap: 0 5rem;
+}
+}
+@media (max-width: 930px){
+    .main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 0 5rem;
+}
+}
+@media (max-width: 860px){
+    .main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 0 4rem;
+}
+}
+@media (max-width: 800px){
+    .main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 0 3rem;
+}
+}
+@media (max-width: 720px){
+    .main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 0 2rem;
+}
+}
+@media (max-width: 570px){
+    .main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 0 2rem;
+}
+}
+@media (max-width: 500px){
+    .main_wrap
+{
+    display: grid;
+    grid-template-columns: repeat(1, 98%);
+}
+}
